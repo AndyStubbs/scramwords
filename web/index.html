@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K2DVCFH');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/icon.png">
+    <title>ScramWords</title>
+    <link rel="stylesheet" href="gram.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script src="gram.js"></script>
+  </head>
+  <body class="darkmode">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2DVCFH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <h2 id="timer">60:00</h2>
+      <h2 style="text-transform: uppercase;">ScramWords</h2>
+      <h2 id="lightmode-toggle">&nbsp;</h2>
+    </header>
+    <div id="loading">
+      <p>You are given 6 letters. Enter as many words as you can using those letters.</p>
+      <p>You have 60 seconds.</p>
+      <p>&nbsp;</p>
+      <div id="message">
+        Loading<span>.</span><span>.</span><span>.</span>
+      </div>
+    </div>
+    <section id="letters" style="visibility: hidden;">
+        <input type="button" id="btn-backspace" class="letter button long-button" value="← BACK" />
+        <input type="button" id="btn-enter" class="letter button long-button" value="↵ ENTER" />
+    </section>
+    <section id="word"></section>
+    <section id="words"></section>
+    <section class="simple-keyboard"></section>
+    <p style="display: none;">5</p>
+  </body>
+</html>
